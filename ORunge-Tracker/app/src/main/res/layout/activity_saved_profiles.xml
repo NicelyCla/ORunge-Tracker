@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".saved_profiles"
+    android:background="@drawable/background">
+
+
+
+    <TableLayout
+        android:id="@+id/layoutBarra"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/barra">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonNewProfile"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/newprofilebutton"
+                android:gravity="top|bottom"
+                android:paddingStart="36dp"
+                android:text="New Profile"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <Button
+                android:id="@+id/buttonProfiles"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+
+                android:layout_gravity="center"
+                android:background="@drawable/profilesavedbutton"
+                android:enabled="false"
+                android:paddingStart="36dp"
+                android:text="Profiles"
+                android:textAllCaps="false"
+                android:textColor="#494949"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+
+                android:layout_gravity="center"
+                android:background="@drawable/settingsbutton"
+                android:paddingStart="36dp"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:scrollIndicators="top"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:id="@+id/scrollIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--
+            <Button
+                android:id="@+id/prova"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/profilesbutton"
+                android:gravity="top|bottom"
+                android:paddingStart="65dp"
+                android:text="Prova"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+                -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

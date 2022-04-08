@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/barra">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonNewProfile"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/newprofilebutton"
+                android:gravity="top|bottom"
+                android:paddingStart="36dp"
+                android:text="New Profile"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"
+
+
+                />
+
+
+            <Button
+                android:id="@+id/buttonProfiles"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/profilesavedbutton"
+                android:paddingStart="36dp"
+                android:text="Profiles"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/settingsbutton"
+                android:enabled="false"
+                android:paddingStart="36dp"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:textColor="#494949"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/quadratoColor"
+        android:layout_width="298dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/quadrato">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Choose map's style:"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/chooseMap"
+                android:layout_width="255dp"
+                android:layout_height="137dp">
+
+                <RadioButton
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="true"
+                    android:text="Normal"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/terrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="Terrain"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/hybrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="Hybrid"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/satellite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="Satellite"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="None"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose map's zoom:"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/valueOfSeek"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:background="#07000000"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="15"
+                android:textColor="#ff6200"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:centerColor="#FFB80000"
+                android:endColor="#FFFF4400"
+                android:max="30"
+                android:progress="15"
+                android:progressBackgroundTint="#ff6200"
+                android:startColor="#ff6200"
+                android:thumbTint="#ff6200" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose min speed:"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/sensibility"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:background="#07000000"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="5"
+                android:textColor="#ff6200"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This value is the minimum speed sensitivity, measured in km/h. We recommend that you do not change the data."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose a interval:"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/setInterval"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:background="#07000000"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="2500"
+                android:textColor="#ff6200"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This value is the interval (measured in ms) in which you want to get locations, increase it to save battery."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose a fast interval:"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/setFastInterval"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:background="#07000000"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="2000"
+                android:textColor="#ff6200"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This value is the fast interval (measured in ms), if a location is available sooner you can get it (i.e. another app is using the location services), increase it to save battery."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Choose a priority:"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/choosePriority"
+                android:layout_width="255dp"
+                android:layout_height="137dp">
+
+                <RadioButton
+                    android:id="@+id/balanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="true"
+                    android:text="Balanced power accuracy"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="High accuracy"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="Low power"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ff6200"
+                    android:checked="false"
+                    android:text="No power"
+                    android:textColor="#434343"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This value represents accuracy of location, it may affect the battery."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="98dp"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addbutton"
+                    android:text="reset values"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/addSettings"
+                    android:layout_width="98dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addbutton"
+                    android:enabled="true"
+                    android:text="add chages"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

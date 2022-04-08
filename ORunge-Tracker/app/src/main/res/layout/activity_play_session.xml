@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playSession"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundprofiles"
+    android:gravity="center_horizontal"
+    >
+
+    <TableLayout
+        android:id="@+id/layoutBarra"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/barra"
+        android:gravity="left">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="68dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/backbutton"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="You may delay, but time will not. "
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonSTART"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttonstart"
+        android:gravity="center"
+        android:text="start work session"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CURRENT PROFILE"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/profiloCorrente"
+                android:layout_width="319dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rettangoloarrotondato"
+                android:gravity="center"
+                android:hint="Esempio"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:textColor="@color/white"
+                android:textColorHint="#ecff4d12"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/modifica"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/addbutton"
+                android:text="add changes"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/pesoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CURRENT WEIGHT"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/pesoCorrente"
+                android:layout_width="319dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rettangoloarrotondato"
+                android:gravity="center"
+                android:hint="75"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#ecff4d12"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/modificaPeso"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/addbutton"
+                android:text="add changes"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Time worked by day of the week"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="345dp"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lunedi"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Monday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lunediOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/martedi"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Tuesday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/martediOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mercoledi"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Wednesday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/mercolediOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/giovedi"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Thursday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/giovediOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/venerdi"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Friday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/venerdiOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sabato"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Saturday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/sabatoOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/domenica"
+                        android:layout_width="95dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="center_vertical|center"
+                        android:text="Sunday"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/domenicaOreMinuti"
+                        android:layout_width="241dp"
+                        android:layout_height="31dp"
+                        android:background="@drawable/rettangologiorni"
+                        android:gravity="right|center_vertical"
+                        android:text="0h0m"
+                        android:textColor="@color/white"
+                        android:paddingRight="5dp"/>
+
+                </TableRow>
+
+
+            </TableLayout>
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This chart shows how much time you worked on a given day of the week."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/maxMaximumSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Your maximum speed reached is 0.0Km/h"
+                android:textColor="#ffff00"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Minutes worked by day"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="335dip"
+                android:layout_height="240dip"
+                android:alpha="0.8"
+                app:seriesColor="#ee0000" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shows how much time you worked (in minutes) each day since you completed your first work session."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Average speed reached by day"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph2"
+                android:layout_width="335dip"
+                android:layout_height="240dip"
+                android:alpha="0.8"
+                app:seriesColor="#ee0000" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shows how much fast you worked (in km/h) each day since you completed your first work session."
+                android:textColor="#f1f1f1"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/viewHistory"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/addbutton"
+                android:text="show history"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

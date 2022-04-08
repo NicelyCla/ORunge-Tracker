@@ -1,0 +1,84 @@
+dentro onStartCommand:
+
+        Log.i("Servizio", "Service started");
+
+        try {
+            if (intent.getAction().equals("start")) {
+                Toast.makeText(this, "you pressed start", Toast.LENGTH_SHORT).show();
+            } else if (intent.getAction().equals("stop")) {
+
+
+                Toast.makeText(this, "you pressed stop", Toast.LENGTH_SHORT).show();
+                Log.i("bottonicustom", "you pressed stop");
+
+                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which){
+                            case DialogInterface.BUTTON_POSITIVE:
+
+                                break;
+
+                            case DialogInterface.BUTTON_NEGATIVE:
+                                //nothing
+                                break;
+                        }
+                    }
+                };
+
+                AlertDialog builder = new AlertDialog.Builder(this).setMessage("Have you finished your session?")
+                        .setPositiveButton("Yes", dialogClickListener)
+                        .setNegativeButton("No", dialogClickListener).create();
+                builder.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+                builder.show();
+
+            } else if (intent.getAction().equals("pause")) {
+                Toast.makeText(this, "you pressed pause", Toast.LENGTH_SHORT).show();
+                Log.i("bottonicustom", "you pressed pause");
+            } else if (intent.getAction().equals("abort")) {
+                Log.i("bottonicustom", "you pressed abort");
+                Toast.makeText(this, "you pressed abort", Toast.LENGTH_SHORT).show();
+
+                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which){
+                            case DialogInterface.BUTTON_POSITIVE:
+                                stopForeground(true);
+                                stopSelf();
+                                removeLocationUpdates();
+
+                                break;
+
+                            case DialogInterface.BUTTON_NEGATIVE:
+                                //nothing
+                                break;
+                        }
+                    }
+                };
+
+                AlertDialog builder = new AlertDialog.Builder(this).setMessage("Do you really want to abort the session?")
+                        .setPositiveButton("Yes", dialogClickListener)
+                        .setNegativeButton("No", dialogClickListener).create();
+                builder.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+                builder.show();
+            }
+/-------------------------------/
+fuori
+
+
+
+        Intent abortIntent = new Intent(this, LocationUpdatesService.class);
+        abortIntent.setAction("abort");
+        PendingIntent abortPendingIntent = PendingIntent.getService(this, 0, abortIntent, 0);
+        contentView.setOnClickPendingIntent(R.id.abort_notification,abortPendingIntent);
+
+        Intent pauseIntent = new Intent(this, LocationUpdatesService.class);
+        pauseIntent.setAction("pause");
+        PendingIntent pausePendingIntent = PendingIntent.getService(this, 0, pauseIntent, 0);
+        contentView.setOnClickPendingIntent(R.id.pause_notification,pausePendingIntent);
+
+        Intent stopIntent = new Intent(this, LocationUpdatesService.class);
+        stopIntent.setAction("stop");
+        PendingIntent stopPendingIntent = PendingIntent.getService(this, 0, stopIntent, 0);
+        contentView.setOnClickPendingIntent(R.id.stop_notification,stopPendingIntent);

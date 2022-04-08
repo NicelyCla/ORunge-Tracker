@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/barra">
+
+
+        <TableRow
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonNewProfile"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/newprofilebutton"
+                android:enabled="false"
+                android:gravity="top|bottom"
+                android:paddingStart="36dp"
+                android:text="New Profile"
+                android:textAllCaps="false"
+                android:textColor="#494949"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/buttonProfiles"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/profilesavedbutton"
+                android:paddingStart="36dp"
+                android:text="Profiles"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="114dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@drawable/settingsbutton"
+                android:paddingStart="36dp"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/quadratoColor"
+        android:layout_width="298dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/quadrato">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Get Started"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Just a few details to get you started"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/nomeProfilo"
+                android:layout_width="231dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/nomeprofilo"
+                android:drawablePadding="5dp"
+                android:hint="Profile's name"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:paddingStart="31dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/nomeAtleta"
+                android:layout_width="231dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/nomeatleta"
+                android:drawablePadding="5dp"
+                android:hint="Athlete's name"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:paddingStart="31dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/eta"
+                android:layout_width="231dp"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/age"
+                android:drawablePadding="5dp"
+                android:hint="Age"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:paddingStart="31dp" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/peso"
+                android:layout_width="231dp"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/peso"
+                android:drawablePadding="5dp"
+                android:hint="Weight (kg)"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:paddingStart="31dp" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="106dp"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/addbutton"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Limits, like fear, is often an illusion. "
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="normal|bold|italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
