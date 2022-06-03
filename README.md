@@ -4,4 +4,4 @@ Android app for examining mobile systems. The app counts the kilometers traveled
 ![](application%20screenshot/main_menu.jpg)
 
 <img src="application%20screenshot/main_menu.jpg" 
-     style="max-width: 100%;" />
+     style="max-width: 50%;" />
