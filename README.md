@@ -4,4 +4,5 @@ Android app for examining mobile systems.
 Android studio updates continuously, there may be incompatibility issues for recent versions of java.
 
 ##Screenshot app
+
 <img src="application%20screenshot/main_menu.jpg" width="275"> <img src="application%20screenshot/profile_menu.jpg" width="275"> <img src="application%20screenshot/profile_stats_1.jpg" width="275"> <img src="application%20screenshot/profile_stats_2.jpg" width="275"> <img src="application%20screenshot/start_session.jpg" width="275"> <img src="application%20screenshot/settings_menu_1.jpg" width="275"> <img src="application%20screenshot/settings_menu_2.jpg" width="275"> <img src="application%20screenshot/notify_window.jpg" width="275">
