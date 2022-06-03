@@ -1,6 +1,13 @@
 # ORunge-Tracker
 <img src="orunge_logo.png" width="80"> The app counts the kilometers traveled and graphically draws the route on the Google Map (Google Map Api).<br>
-Use of databases (pure sql) and statistics for each profile.
+Use of databases (pure sql) and statistics for each profile.<br>
+The required specifications are:<br>
+● The user can use this app to store information about outdoor run activities
+● Location services must be used to record run sessions by constantly tracking the location of the user (use an appropriate sampling rate).
+● For each session the following metrics must be calculated: start time, duration, distance, average speed, maximum speed
+● Using a map, a user can also see in real-time the path of the activity
+● The user can always Pause and Resume the session
+● A list of completed activities must be presented to the user
 
 ## Application
 First, if not present, the creation of a new athlete profile will be requested.
