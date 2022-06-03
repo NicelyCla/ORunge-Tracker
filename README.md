@@ -3,7 +3,7 @@
 
 ## Application
 First, if not present, the creation of a new athlete profile will be requested.
-The list of profiles can be easily consulted with the appropriate navigation menu
+The list of profiles can be easily consulted with the appropriate navigation menu.
 Each profile has its own statistics, calculation of average speeds, distances traveled, the athlete has at the disposal of the graphs to consult these parameters.
 The Settings voice are very rich and it is possible to calibrate the app to optimize the impact on the battery.
 
