@@ -1,6 +1,6 @@
 # ORunge-Tracker
-<img src="orunge_logo.png" width="80"> The app counts the kilometers traveled and graphically draws the route on the Google Map.<br>
-Use of databases for user profiles and complete with statistics for each profile.
+<img src="orunge_logo.png" width="80"> The app counts the kilometers traveled and graphically draws the route on the Google Map (Google Map Api).<br>
+Use of databases (pure sql) and statistics for each profile.
 
 ## Application
 First, if not present, the creation of a new athlete profile will be requested.
