@@ -1,5 +1,6 @@
 # ORunge-Tracker
-<img src="orunge_logo.png" width="80"> The app counts the kilometers traveled and graphically draws the route on the map. Use of databases for user profiles. Also complete with settings and options for energy saving. One of the few projects in which I have particularly cared for the graphic side. The app has been tested up to Android Oreo.<br>
+<img src="orunge_logo.png" width="80"> The app counts the kilometers traveled and graphically draws the route on the map. Use of databases for user profiles and complete with statistics for each profile. The options are very rich and it is possible to calibrate the app to optimize the impact on the battery.<br>
+One of the few projects in which I have particularly cared for the graphic side. The app has been tested up to Android Oreo.<br>
 An app written years ago for "Mobile Systems" course.<br>
 Android studio updates continuously, there may be incompatibility issues for recent versions of java.
 
