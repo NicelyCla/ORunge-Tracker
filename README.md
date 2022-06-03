@@ -7,7 +7,7 @@ Use of databases (pure sql) and statistics for each profile.<br>
 - User Interface
 - Storage
 
-## The required specifications are:<br>
+## The required specifications
 - The user can use this app to store information about outdoor run activities
 - Location services must be used to record run sessions by constantly tracking the location of the user (use an appropriate sampling rate).
 - For each session the following metrics must be calculated: start time, duration, distance, average speed, maximum speed
